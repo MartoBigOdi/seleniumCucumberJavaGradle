@@ -44,6 +44,12 @@ public class BasePage {
           Find(locator).click();
      }
 
+     public void write(String locator, String textToWrite){
+          WebElement webElement = Find(locator);
+          webElement.clear(); //Esto va a limpiar el campo de texto
+          webElement.sendKeys(textToWrite); //Le enviamos el texto
+     }
+
 
 
 

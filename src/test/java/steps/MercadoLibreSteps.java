@@ -17,12 +17,12 @@ public class MercadoLibreSteps {
 
     @When("^I enter a search criteria$")
     public void enterSearchCriteria(){
-
+        mercadoLibrePage.enterSearchCriteria("Razer Blade 15 base model");
     }
 
     @And("^click on the search button$")
     public void clickButtonSearch(){
-
+        mercadoLibrePage.clickMercadoSearch();
     }
 
     @Then("the results match the criteria")
