@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class BasePage {
 
@@ -50,6 +52,11 @@ public class BasePage {
           webElement.sendKeys(textToWrite); //Le enviamos el texto
      }
 
+     public void selectFromDropdownText(String locator, String valueToSelect){
+          //Instanciamos el "Select"
+          Select dropdown = new Select(Find(locator));
+          dropdown.selectByVisibleText(valueToSelect);
+     }
 
 
 
