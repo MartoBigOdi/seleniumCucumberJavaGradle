@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Test Mercado Libre search functionality" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-12-07T03:11:54" hostname="LAPTOP-T3Q36G9U" time="6.539">
+<testsuite name="Test Mercado Libre search functionality" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-12-15T12:14:21" hostname="LAPTOP-T3Q36G9U" time="6.372">
   <properties/>
-  <testcase name="As a user I enter a search criteria in Mercado Libre" classname="Test Mercado Libre search functionality" time="6.539"/>
+  <testcase name="As a user I enter a search criteria in Mercado Libre" classname="Test Mercado Libre search functionality" time="6.372"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 95.0.4638.69 (6a1600ed572fedecd573b6c2b90a22fe6392a410-refs/branch-heads/4638@{#984}) on port 5627
+  <system-err><![CDATA[Starting ChromeDriver 95.0.4638.69 (6a1600ed572fedecd573b6c2b90a22fe6392a410-refs/branch-heads/4638@{#984}) on port 41190
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1638846716.112][WARNING]: This version of ChromeDriver has not been tested with Chrome version 96.
-dic. 07, 2021 12:11:56 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+[1639570463.432][WARNING]: This version of ChromeDriver has not been tested with Chrome version 96.
+dic. 15, 2021 9:14:23 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

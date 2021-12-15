@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import pages.MercadoLibrePage;
 
 public class MercadoLibreSteps {
@@ -25,8 +26,10 @@ public class MercadoLibreSteps {
         mercadoLibrePage.clickMercadoSearch();
     }
 
+    //Asi manejamos el Assert desde la clase de Steps y no desde la clase que creamos para la pagina
     @Then("the results match the criteria")
     public void validateResultMatch(){
-
+        Assert.assertEquals("Bateria Rc30-0270 Rz09-0270 Para Razer Hazel Blade 15 Base S" ,mercadoLibrePage.firstResult());
     }
+
 }
