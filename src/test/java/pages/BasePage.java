@@ -83,4 +83,8 @@ public class BasePage {
           return Find(locator).getText();
      }
 
+    public static void closeBrowser() {
+           driver.quit();
+    }
+
 }
