@@ -13,9 +13,6 @@ on:
   pull_request:
     branches: [ main ]
 
-permissions:
-  contents: read
-
 jobs:
   build:
 
@@ -30,5 +27,3 @@ jobs:
         distribution: 'temurin'
     - name: Build with Gradle
       run: gradle test
-      with:
-        arguments: build
