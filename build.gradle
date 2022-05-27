@@ -23,12 +23,6 @@ dependencies {
 
 }
 
-configurations {
-    cucumberRuntime {
-        extendsFrom testImplementation
-    }
-}
-
 test {
     systemProperty "cucumberOptions", System.getProperty("cucumber.options")
 }
