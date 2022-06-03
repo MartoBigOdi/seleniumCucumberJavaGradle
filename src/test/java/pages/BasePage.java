@@ -13,8 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
 
-     //Vamos a tener una instancia del objeto para compartir en todas las clases.
-
+     //Vamos a tener una instancia del objeto para compartir en todas las clases, por eso "static"
      protected static WebDriver driver;
      private static WebDriverWait wait;
      private static Actions action;
@@ -30,14 +29,17 @@ public class BasePage {
           wait = new WebDriverWait(driver, 10);
      }
 
+
      public BasePage(WebDriver driver){
           BasePage.driver = driver;
           wait = new WebDriverWait(driver, 10);
      }
 
+
      public static void navigateTo(String url){
           driver.get(url);
      }
+
 
      private WebElement Find(String locator){
           //Nos devuelve un Web Element pero espera que aparezca. Lo buscamos con "By.xpath()"
@@ -46,10 +48,12 @@ public class BasePage {
           return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
      };
 
+
      public void clickElement(String locator){
           //Hacemos Click en el elemento que encontramos con el metodo "Find()"
           Find(locator).click();
      }
+
 
      public void write(String locator, String textToWrite){
           WebElement webElement = Find(locator);
@@ -57,34 +61,40 @@ public class BasePage {
           webElement.sendKeys(textToWrite); //Le enviamos el texto
      }
 
+
      public void selectFromDropdownText(String locator, String valueToSelect){
           //Instanciamos el "Select"
           Select dropdown = new Select(Find(locator));
           dropdown.selectByVisibleText(valueToSelect);
      }
 
+
      public void hoverOverElement(String locator){
           //Estamos haciendo un hover over sobre un elemento
           action.moveToElement(Find(locator));
      }
+
 
      public void doubleClick(String locator){
           //Estamos haciendo un doble click a un elemento
           action.doubleClick(Find(locator));
      }
 
+
      public void rightClick(String locator){
           //Click derecho sobre un elemento
           action.contextClick(Find(locator));
      }
+
 
      //Devolvemos el texto de un webElement
      public String textFromElement(String locator){
           return Find(locator).getText();
      }
 
-    public static void closeBrowser() {
+
+     public static void closeBrowser() {
            driver.quit();
-    }
+     }
 
 }
