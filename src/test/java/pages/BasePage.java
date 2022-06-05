@@ -41,11 +41,14 @@ public class BasePage {
      }
 
 
+     //Es Private porque lo utilizamos en otros metodos de la clase unicamente
      private WebElement Find(String locator){
-          //Nos devuelve un Web Element pero espera que aparezca. Lo buscamos con "By.xpath()"
+          //Nos devuelve un WebElement pero espera que aparezca. Lo buscamos con "By.xpath()"
           //Aca utilizamos una espera explicita porque le dijimos que espere 10 segundos pero la volvimos
           //implicita ya que utilizamos la misma en el framework.
           return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+          //Al devolver un WebElement, con este objeto podemos hacer todo dsp, como WebElement.click(), webElement.sendKeys(textToWrite), 
+          //WebElement..getText() y muchas mas.
      };
 
 
