@@ -29,7 +29,7 @@ public class MercadoLibreSteps {
     //Asi manejamos el Assert desde la clase de Steps y no desde la clase que creamos para la pagina
     @Then("the results match the criteria")
     public void validateResultMatch(){
-        Assert.assertEquals("Bateria Rc30-0270 Rz09-0270 Para Razer Hazel Blade 15 Base S" ,mercadoLibrePage.firstResult());
+        Assert.assertEquals("Laptop Razer Blade 15 Base Model" ,mercadoLibrePage.firstResult());
     }
 
 }
