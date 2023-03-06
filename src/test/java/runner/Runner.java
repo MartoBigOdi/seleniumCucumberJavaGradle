@@ -12,11 +12,12 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "steps",
         monochrome = true,
-        tags = "@Marto",
+        tags = "@linkedin_marto_vasconcelo",
         publish = true
 )
 
 public class Runner {
+
 
         @AfterClass
         public static void cleanDriver(){

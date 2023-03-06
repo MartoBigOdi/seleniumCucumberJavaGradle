@@ -1,4 +1,4 @@
-@Marto
+@meli_simple_validate_search
 Feature: Test Mercado Libre search functionality
 
   Scenario: As a user I enter a search criteria in Mercado Libre

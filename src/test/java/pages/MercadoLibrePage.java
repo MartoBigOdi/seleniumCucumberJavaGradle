@@ -2,8 +2,8 @@ package pages;
 
 public class MercadoLibrePage extends BasePage{
 
-    String SEARCH_BUTTON = "//header/div[1]/form[1]/button[1]";
-    String INPUT_SEARCH_CRITERIA = "/html[1]/body[1]/header[1]/div[1]/form[1]/input[1]";
+    String SEARCH_BUTTON = "/html[1]/body[1]/header[1]/div[1]/div[2]/form[1]/button[1]";
+    String INPUT_SEARCH_CRITERIA = "/html[1]/body[1]/header[1]/div[1]/div[2]/form[1]/input[1]";
     String FIRST_RESULT = "//h2[contains(text(),'Laptop Razer Blade 15 Base Model')]";
 
     public MercadoLibrePage() {

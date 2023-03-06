@@ -47,7 +47,7 @@ public class BasePage {
           //Aca utilizamos una espera explicita porque le dijimos que espere 10 segundos pero la volvimos
           //implicita ya que utilizamos la misma en el framework.
           return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
-          //Al devolver un WebElement, con este objeto podemos hacer todo dsp, como WebElement.click(), webElement.sendKeys(textToWrite), 
+          //Al devolver un WebElement, con este objeto podemos hacer dsp, como WebElement.click(), webElement.sendKeys(textToWrite),
           //WebElement..getText() y muchas mas.
      };
 
